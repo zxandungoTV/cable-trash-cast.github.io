@@ -1,9 +1,13 @@
 .center-object{
-    margin: 0;
-    background: yellow;
+    background: rgba(0, 0, 0, 0.74);
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    max-height: 80vh;
 }

@@ -2,7 +2,8 @@
 	$Header
 ========================================================================== */
 #header {
-	position:inherit;
+	position:sticky;
+	top: 0;
 	width: 100%;
 	z-index: 999;
     /* background-color:  rgba(255, 253, 154, 0.75); */
