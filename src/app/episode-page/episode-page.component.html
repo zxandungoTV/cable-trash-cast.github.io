@@ -1,6 +1,38 @@
 <div>
     <h2>Episode available</h2>
     <div>
-        insert list of available episodes
+        <cdk-accordion class="example-accordion">
+            <cdk-accordion-item *ngFor="let item of items; let index = index;" #accordionItem="cdkAccordionItem"
+                class="example-accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
+                [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
+
+                <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+                    {{ item.name }}
+                    <!-- <span class="example-accordion-item-description">
+                        {{ accordionItem.expanded ? 'close' : 'open' }}
+                    </span> -->
+                </div>
+
+                <div class="example-accordion-item-body" role="region"
+                    [style.display]="accordionItem.expanded ? '' : 'none'" [attr.id]="'accordion-body-' + index"
+                    [attr.aria-labelledby]="'accordion-header-' + index">
+                    <div class="flex-listcontainer">
+
+                        <iframe width="560" height="315" [src]="item.youtubeLink" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="description-div">
+                            {{ item.name }}
+                            <br>
+                            {{ item.description }}
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </cdk-accordion-item>
+        </cdk-accordion>
     </div>
 </div>
