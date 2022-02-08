@@ -11,5 +11,10 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  goToSegment(id: string) {
+    let el = document.getElementById(id);
+    if (el !== null)
+      el.scrollIntoView();
+  }
 
 }

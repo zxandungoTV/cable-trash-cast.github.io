@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { EpisodePageComponent } from './episode-page/episode-page.component';
@@ -18,6 +17,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 
 import {CdkAccordionModule} from '@angular/cdk/accordion';
+import { ProfileCardComponent } from './profile-card/profile-card.component';
 
 @NgModule({
   declarations: [
@@ -27,11 +27,11 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
     EpisodePageComponent,
     MembersPageComponent,
     MerchPageComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    ProfileCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatMenuModule,

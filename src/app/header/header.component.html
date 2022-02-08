@@ -1,14 +1,13 @@
 <header id="header">
     <div class="header-content clearfix">
-        <a class="logo" routerLink="">Cable Trash Cast</a>
+        <a class="logo"(click)="goToSegment('mainPage')">Cable Trash Cast</a>
         <nav class="navigation" role="navigation">
             <ul class="primary-nav">
-                <li><a routerLink="main" routerLinkActive="active">Main</a></li>
-                <li><a routerLink="episodes" routerLinkActive="active">Episodes</a></li>
-                <li><a routerLink="members" routerLinkActive="active">Members</a></li>
-                <li><a routerLink="merch" routerLinkActive="active">Merch</a></li>
+                <li><a (click)="goToSegment('mainPage')">Main</a></li>
+                <li><a (click)="goToSegment('membersPage')">Members</a></li>
+                <li><a (click)="goToSegment('episodesPage')">Episodes</a></li>
+                <li><a (click)="goToSegment('merchPage')">Merch</a></li>
             </ul>
         </nav>
-        <a routerLink="" class="nav-toggle">Menu<span></span></a>
     </div>
 </header>
