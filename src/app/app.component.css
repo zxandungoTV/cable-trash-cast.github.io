@@ -1,6 +1,4 @@
 .center-object{
-    /* background: rgba(0, 0, 0, 0.74); */
-    /* color: white; */
     border-radius: 1em;
     padding: 1em;
     position: absolute;
@@ -8,6 +6,7 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    width: 70vw;
+    width: 80vw;
     max-height: 80vh;
+    padding-top: 25rem;
 }

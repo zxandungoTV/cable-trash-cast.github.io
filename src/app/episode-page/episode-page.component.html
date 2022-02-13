@@ -1,5 +1,5 @@
 <div>
-    <h2>Episode available</h2>
+    <h2 style="text-align: center;">Episode available</h2>
     <div>
         <cdk-accordion class="example-accordion">
             <cdk-accordion-item *ngFor="let item of items; let index = index;" #accordionItem="cdkAccordionItem"
@@ -22,12 +22,7 @@
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="description-div">
-                            {{ item.name }}
-                            <br>
-                            {{ item.description }}
-                        </div>
-
+           
                     </div>
 
 

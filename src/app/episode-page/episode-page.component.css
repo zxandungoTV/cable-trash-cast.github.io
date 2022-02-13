@@ -45,8 +45,7 @@
   .flex-listcontainer{
     display: flex;
     align-content: center;
-    justify-content: space-between;
-    background-color: rgb(0, 0, 0,0.2);
+    justify-content: center;
   }
   .description-div{
     width: 28rem;

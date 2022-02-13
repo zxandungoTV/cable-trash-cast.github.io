@@ -1,14 +1,18 @@
-
 <div class="card">
-  <img src="../../assets/images/bebopHill.png" alt="John" style="width:100%">
+  <img src={{image}} alt="John" style="width:100%">
   <h1>{{name}}</h1>
-  <!-- <p class="title">CEO & Founder, Example</p>
-  <p>Harvard University</p> -->
+  <p class="title">{{role}}</p>
   <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-dribbble"></i></a> 
-    <a href="#"><i class="fa fa-twitter"></i></a>  
-    <a href="#"><i class="fa fa-linkedin"></i></a>  
-    <a href="#"><i class="fa fa-facebook"></i></a> 
+
+    <a *ngIf="links.twitter!==undefined" href={{links.twitter}} target="_blank"><i class="fa fa-twitter"></i></a>
+    <a *ngIf="links.twitch!==undefined" href={{links.twitch}} target="_blank"><i class="fa fa-twitch"></i></a>
+    <a *ngIf="links.youtube!==undefined" href={{links.youtube}} target="_blank"><i class="fa fa-youtube"></i></a>
+    <a *ngIf="links.instagram!==undefined" href={{links.instagram}} target="_blank"><i class="fa fa-instagram"></i></a>
+    <a *ngIf="links.soundcloud!==undefined" href={{links.soundcloud}} target="_blank"><i
+        class="fa fa-soundcloud"></i></a>
+    <a *ngIf="links.kofi!==undefined" href={{links.kofi}}><i class="fa fa-at"></i></a>
+    <a *ngIf="links.redbuble!==undefined" href={{links.redbuble}}><i class="fa fa-at"></i></a>
+
   </div>
   <p><button>Contact</button></p>
 </div>

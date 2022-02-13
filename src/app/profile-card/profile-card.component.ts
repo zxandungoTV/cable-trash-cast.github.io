@@ -8,9 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProfileCardComponent implements OnInit {
 
   @Input()
-  name!: string;
+  name!: any;
   @Input()
-  links!: string;
+  links!: any;
+  @Input()
+  role!: any;
+  @Input()
+  image!: any;
   constructor() { }
 
   ngOnInit(): void {
