@@ -55,6 +55,18 @@ export class MembersPageComponent implements OnInit {
       image: '~../../assets/images/bebopHill.png',
       role: 'Podcast Member'
     },
+    {
+      name: 'Holoslair',
+      links: {  },
+      image: '~../../assets/images/bebopHill.png',
+      role: 'Podcast Member'
+    },
+    {
+      name: 'Jacob the dragon',
+      links: { },
+      image: '~../../assets/images/bebopHill.png',
+      role: 'Podcast Member'
+    },
   ]
   constructor() { }
 

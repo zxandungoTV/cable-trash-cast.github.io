@@ -1,6 +1,6 @@
 <div>
     <h2 style="text-align: center;">Episode available</h2>
-    <div>
+    <div >
         <cdk-accordion class="example-accordion">
             <cdk-accordion-item *ngFor="let item of items; let index = index;" #accordionItem="cdkAccordionItem"
                 class="example-accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
@@ -8,9 +8,6 @@
 
                 <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
                     {{ item.name }}
-                    <!-- <span class="example-accordion-item-description">
-                        {{ accordionItem.expanded ? 'close' : 'open' }}
-                    </span> -->
                 </div>
 
                 <div class="example-accordion-item-body" role="region"
